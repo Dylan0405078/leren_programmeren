@@ -1,18 +1,18 @@
 
-aantal_personen = 4
-kosten_per_ticket = 7.45
-tijd_vr_gameseat_minuten = 45
+AANTAL_PERSONEN = 4
+KOSTEN_PER_TICKET = 7.45
+TIJD_VR_GAMESEAT_MINUTEN = 45
 
-kosten_per_5_minuten_vr_gameseat = 0.37
+KOSTEN_PER_5_MINUTEN_VR_GAMESEAT = 0.37
 
-# kosten voor de toegangstickets
-totaal_kosten_tickets = aantal_personen * kosten_per_ticket
 
-# kosten voor de VIP-VR-GameSeat
-totaal_kosten_vr_gameseat = (tijd_vr_gameseat_minuten / 5) * aantal_personen * kosten_per_5_minuten_vr_gameseat
+totaal_kosten_tickets = AANTAL_PERSONEN * KOSTEN_PER_TICKET
 
-# totaal kosten
+
+totaal_kosten_vr_gameseat = (TIJD_VR_GAMESEAT_MINUTEN / 5) * AANTAL_PERSONEN * KOSTEN_PER_5_MINUTEN_VR_GAMESEAT
+
+
 totaal_kosten = totaal_kosten_tickets + totaal_kosten_vr_gameseat
 
 
-print(f"Dit geweldige dagje-uit met {aantal_personen} mensen in de Speelhal met {tijd_vr_gameseat_minuten} minuten VR kost je maar {totaal_kosten} euro")
+print(f"Dit geweldige dagje-uit met {AANTAL_PERSONEN} mensen in de Speelhal met {TIJD_VR_GAMESEAT_MINUTEN} minuten VR kost je maar {totaal_kosten} euro")
