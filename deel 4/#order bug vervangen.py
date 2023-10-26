@@ -19,3 +19,6 @@ else:
     resultaat = deel_getallen(getal_1, getal_2)
     if resultaat is not None:
         print("{} gedeeld door {} is gelijk aan {}".format(getal_1, getal_2, resultaat))
+
+
+# def naar boven verschoven en som uit print gehaald

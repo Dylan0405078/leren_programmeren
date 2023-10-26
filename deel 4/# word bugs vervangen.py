@@ -8,3 +8,6 @@ elif len(woord1) < len(woord2):
     print('Woord 1 heeft minder letters dan woord 2')
 else:
     print('Woord 1 en woord 2 hebben evenveel letters')
+
+
+#len toegevoegd bij beide woorden en input gebruikt inplaats van de string + print commando

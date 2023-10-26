@@ -16,3 +16,6 @@ try:
         print('Nee, dat klopt niet')
 except ValueError:
     print('Dat is geen nummer')
+
+
+#onnodige strings verwijderd, else gebruikt ipv elif en expect volledig gemaakt met Value Error

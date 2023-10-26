@@ -11,3 +11,6 @@ amount_medium = int(input('En hoeveel ijsjes van {} wil je bestellen? '.format(c
 totalPrice = amount_small * SMALL_PRICE + amount_medium * MEDIUM_PRICE
 
 print('Dat is dan {} totaal'.format(convertToEuroText(totalPrice)))
+
+
+# extra haken toegevoegd bij amount small en medium
