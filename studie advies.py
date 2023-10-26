@@ -1,4 +1,9 @@
-# Definieer constanten voor de teksten en stellingen
+# studie advies
+
+
+
+
+#  constanten voor de teksten en stellingen
 STUDIEDOKTER_TITEL = '''
 *********************** STUDIEADVIES ***********************
 Ik ga jou helpen met jouw opleiding. Jij krijgt een aantal stellingen te zien.

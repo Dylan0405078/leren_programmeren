@@ -1,7 +1,7 @@
 #sollicitatie
 
 
-# Definieer constanten voor de initiële vereisten
+#  constanten voor de initiële vereisten
 MIN_GEWICHT = 90  # Minimaal gewicht in kg
 MAX_GEWICHT = 120  # Maximaal gewicht in kg
 MIN_LENGTE = 150  # Minimale lengte in cm
@@ -9,6 +9,11 @@ MAX_LENGTE = 220  # Maximale lengte in cm
 MIN_DIEREN_ERVARING = 4  # Minimale jaren ervaring met dieren-dressuur
 MIN_JONGLEREN_ERVARING = 5  # Minimale jaren ervaring met jongleren
 MIN_ACROBATIEK_ERVARING = 3  # Minimale jaren ervaring met acrobatiek
+MIN_ONDERNEMERS_JAREN = 3 # Minimale jaren in de onderneming
+MIN_WERKNEMERS = 5 # Minimale hoeveelheid werknemers
+MIN_SNOR_BREEDTE = 10 # Minimale snor breedte
+MIN_KRULHAAR_LENGTE = 20 # minimale lengte haar
+MIN_GLIMLACH_BREEDTE = 10 # minimale glimlach breedte
 
 # Vraag alle benodigde informatie aan de kandidaat voor de initiële vereisten
 vrachtwagen_rijbewijs = input("Heeft u een geldig Vrachtwagen rijbewijs? (ja/nee): ").strip().lower()
@@ -28,12 +33,6 @@ geschikt_initieel = (
     (dieren_erf >= MIN_DIEREN_ERVARING or jongleren_erf >= MIN_JONGLEREN_ERVARING or acrobatiek_erf >= MIN_ACROBATIEK_ERVARING)
 )
 
-# Definieer constanten voor de nieuwe vereisten
-MIN_ONDERNEMERS_JAREN = 3
-MIN_WERKNEMERS = 5
-MIN_SNOR_BREEDTE = 10
-MIN_KRULHAAR_LENGTE = 20
-MIN_GLIMLACH_BREEDTE = 10
 
 # Vraag alle benodigde informatie aan de kandidaat voor de nieuwe vereisten
 diploma_ondernemen = input("Heeft u een Diploma MBO-4 ondernemen? (ja/nee): ").strip().lower()
