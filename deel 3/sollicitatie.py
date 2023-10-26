@@ -20,15 +20,9 @@ vrachtwagen_rijbewijs = input("Heeft u een geldig Vrachtwagen rijbewijs? (ja/nee
 hoge_hoed = input("Heeft u een hoge hoed? (ja/nee): ").strip().lower()
 lichaamsgewicht = float(input("Wat is uw lichaamsgewicht in kg?: "))
 lichaamslengte = float(input("Wat is uw lichaamslengte in cm?: "))
-dierendressuur_tijd = int(input("Hoeveel jaar praktijkervaring heeft u met dieren-dressuur?: "))
-jongleren_tijd = int(input("Hoeveel jaar ervaring heeft u met jongleren?: "))
-acrobatiek_tijd = int(input("Hoeveel jaar praktijkervaring heeft u met acrobatiek?: "))
-
-# Vraag alle benodigde informatie aan de kandidaat voor de nieuwe vereisten
-diploma_ondernemen = input("Heeft u een Diploma MBO-4 ondernemen? (ja/nee): ").strip().lower()
-ondernemer_jaren = int(input("Hoeveel jaar bent u al ondernemer?: "))
-werknemers_in_loondienst = int(input("Hoeveel werknemers heeft u in loondienst?: "))
-geslacht = input("Wat is uw geslacht? (man/vrouw/anders): ").strip().lower()
+dieren_erf = int(input("Hoeveel jaar praktijkervaring heeft u met dieren-dressuur?: "))
+jongleren_erf = int(input("Hoeveel jaar ervaring heeft u met jongleren?: "))
+acrobatiek_erf = int(input("Hoeveel jaar praktijkervaring heeft u met acrobatiek?: "))
 
 # Beoordeel de geschiktheid van de kandidaat voor de initiële vereisten
 geschikt_initieel = (
@@ -36,8 +30,15 @@ geschikt_initieel = (
     hoge_hoed == "ja" and
     MIN_GEWICHT < lichaamsgewicht < MAX_GEWICHT and
     MIN_LENGTE < lichaamslengte < MAX_LENGTE and
-    (dierendressuur_tijd >= MIN_DIEREN_ERVARING or jongleren_tijd >= MIN_JONGLEREN_ERVARING or acrobatiek_tijd >= MIN_ACROBATIEK_ERVARING)
+    (dieren_erf >= MIN_DIEREN_ERVARING or jongleren_erf >= MIN_JONGLEREN_ERVARING or acrobatiek_erf >= MIN_ACROBATIEK_ERVARING)
 )
+
+
+# Vraag alle benodigde informatie aan de kandidaat voor de nieuwe vereisten
+diploma_ondernemen = input("Heeft u een Diploma MBO-4 ondernemen? (ja/nee): ").strip().lower()
+ondernemer_jaren = int(input("Hoeveel jaar bent u al ondernemer?: "))
+werknemers_in_loondienst = int(input("Hoeveel werknemers heeft u in loondienst?: "))
+geslacht = input("Wat is uw geslacht? (man/vrouw/anders): ").strip().lower()
 
 # Beoordeel de geschiktheid van de kandidaat voor de nieuwe vereisten
 geschikt_nieuw = False
@@ -74,7 +75,7 @@ if not (MIN_GEWICHT < lichaamsgewicht < MAX_GEWICHT):
 if not (MIN_LENGTE < lichaamslengte < MAX_LENGTE):
     criteria_niet_voldaan.append("Geldig lichaamslengte")
 
-if not (dierendressuur_tijd >= MIN_DIEREN_ERVARING or jongleren_tijd >= MIN_JONGLEREN_ERVARING or acrobatiek_tijd >= MIN_ACROBATIEK_ERVARING):
+if not (dieren_erf >= MIN_DIEREN_ERVARING or jongleren_erf >= MIN_JONGLEREN_ERVARING or acrobatiek_erf >= MIN_ACROBATIEK_ERVARING):
     criteria_niet_voldaan.append("Ervaring met dieren-dressuur, jongleren of acrobatiek")
 
 if not (diploma_ondernemen == "ja" or (ondernemer_jaren > MIN_ONDERNEMERS_JAREN and werknemers_in_loondienst >= MIN_WERKNEMERS)):

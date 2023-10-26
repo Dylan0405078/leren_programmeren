@@ -16,6 +16,8 @@ elif a < b:
     print("a is het kleinste getal:", Min)
 # Als geen van beide voorwaarden waar is, zijn a en b gelijk
 else:
+    Min = a
+    Max = a
     print("a en b zijn even groot")
 
 # Print het minimum en maximum
