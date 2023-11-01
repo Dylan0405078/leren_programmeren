@@ -5,7 +5,7 @@ from defs import *
 
 
 #cilinder
-diameter = 0  # Vul de gewenste diameter in
+diameter = 8  # Vul de gewenste diameter in
 hoogte = 7   # Vul de gewenste hoogte in
 
 inhoud_cilinder = calculate_cilinder_content(diameter, hoogte)
@@ -21,7 +21,7 @@ print(f"{original_amount:.2f} wordt afgerond naar {rounded_amount:.2f}")
 
 #korting scooters
 
-price = 500.0
+price = 600.0
 brand = 'Vespa'
 discount = calc_discount(price, brand, month_discount_brands)
 print(f"Korting voor {brand}: {discount:.2f} euro")

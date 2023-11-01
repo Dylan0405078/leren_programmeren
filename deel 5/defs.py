@@ -16,8 +16,6 @@ def calculate_cilinder_content(diameter, hoogte):
 
 
 
-
-
 # afronden op 5 centen
 
 
