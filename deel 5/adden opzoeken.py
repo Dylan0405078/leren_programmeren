@@ -1,3 +1,6 @@
+
+# adden opzoeken
+
 def get_value(data: str, separator: str, position: int) -> str:
     # Split de gegeven data op basis van de opgegeven separator
     splitted_strings = data.split(separator)
@@ -8,7 +11,6 @@ def get_value(data: str, separator: str, position: int) -> str:
         value = splitted_strings[position]
         return value
     else:
-        # Als de positie buiten het bereik ligt, retourneer een lege string
         return "vul een geldig ID in!"
 
 
