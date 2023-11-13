@@ -18,8 +18,8 @@ if hat_choice.lower() == 'yes':
         if desert_choice.lower() == 'yes':
             sheriff_choice = input("Nice! DAVE has escaped from the criminals. Would you like to alert the sheriff? (yes/no)\n")
             if sheriff_choice.lower() == 'yes':
-                display_text("DAVE alerted the sheriff. He goes to the place. Will you go with him or will you go your own way? (along/own way)\n")
-                sheriff_trip = input()
+          
+                sheriff_trip = input("DAVE alerted the sheriff. He goes to the place. Will you go with him or will you go your own way? (along/own way)\n")
                 if sheriff_trip.lower() == 'along':
                     display_text("DAVE goes with the sheriff and you arrest the criminals. You will also be appointed as the sheriff's assistant.")
                 elif sheriff_trip.lower() == 'own way':
