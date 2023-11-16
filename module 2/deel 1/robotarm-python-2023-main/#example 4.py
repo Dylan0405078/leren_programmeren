@@ -3,7 +3,7 @@ from RobotArm import RobotArm
 i= 1
 aantal = 2
 robotArm = RobotArm('exercise 4')
-robotArm.speed = 
+robotArm.speed = 1
 
 for i in range (5):
     if i == 4:
