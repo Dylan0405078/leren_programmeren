@@ -1,18 +1,24 @@
 #example 4
 from RobotArm import RobotArm
 i= 1
+aantal = 2
 robotArm = RobotArm('exercise 4')
+robotArm.speed = 
 
 for i in range (5):
+    if i == 4:
+        aantal = 1
     robotArm.grab()
-    for i in range (2):
+    for _ in range (aantal):
         robotArm.moveRight()
     robotArm.drop()
-    for i in range (2):
-        robotArm.moveLeft()
-for i in range (2):
-        robotArm.moveRight()
-for i in range (5):
+    if i < 4:
+        for _ in range (2):
+             robotArm.moveLeft()
+
+robotArm.moveRight()
+
+for _ in range (4):
     robotArm.grab()
     robotArm.moveLeft()
     robotArm.drop()

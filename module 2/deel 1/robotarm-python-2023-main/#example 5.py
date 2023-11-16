@@ -1,39 +1,26 @@
 #example 5
+#example 5
 from RobotArm import RobotArm
-i= 1
-robotArm = RobotArm('exercise 4')
 
-robotArm.grab()
-for i in range (8):
-    robotArm.moveRight()
-robotArm.drop()
-for i in range (8):
-    robotArm.moveLeft()
-robotArm.grab()
-for i in range (7):
-    robotArm.moveRight()
-robotArm.drop()
-for i in range (7):
-    robotArm.moveLeft()
-robotArm.grab()
-for i in range (5):
-    robotArm.moveRight()
-robotArm.drop()
-for i in range (5):
-    robotArm.moveLeft()
-robotArm.grab()
-for i in range (4):
-    robotArm.moveRight()
-robotArm.drop()
-for i in range (4):
-    robotArm.moveLeft()
-robotArm.grab()
-for i in range (6):
-    robotArm.moveRight()
-robotArm.drop()
-for i in range (6):
-    robotArm.moveLeft()
+robotArm = RobotArm('exercise 5')
 
+i = 8
+position = i - 1
+current_position = position  
+
+for _ in range(4):
+    current_position = position  
     
-# Na jouw code wachten tot het sluiten van de window:
+    robotArm.grab()
+    
+    for _ in range(current_position):
+        robotArm.moveRight()
+    
+    robotArm.drop()
+    
+    for _ in range(current_position):
+        robotArm.moveLeft()
+
+
+# Wait for the window to close after your code
 robotArm.wait()

@@ -1,3 +1,10 @@
-for i in range(1, 13):
-    for j in ['AM', 'PM']:
-        print(f"{i} {j}")
+
+
+for time in range(1,25):
+    if time < 12:
+    	print(f"{time} AM")
+        
+    else:
+        time = time - 12
+         print(f"{time} PM")
+
