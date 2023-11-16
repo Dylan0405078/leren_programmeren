@@ -14,4 +14,5 @@ hoeveelheid_per_kleur = {kleur: zak_met_mms.count(kleur) for kleur in kleuren_tu
 # Toon de hoeveelheid van elke kleur in de zak met M&M's
 print("Hoeveelheid van elke kleur in de zak met M&M's:")
 for kleur, hoeveelheid in hoeveelheid_per_kleur.items():
-    print(f"{kleur}: {hoeveelheid}")
+    if hoeveelheid > 0 :
+        	print(f"{kleur}: {hoeveelheid}")
