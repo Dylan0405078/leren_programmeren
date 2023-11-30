@@ -4,7 +4,7 @@ robotArm = RobotArm('exercise 10')
 
 COUNT_1 = 9
 COUNT_2 = 8
-for _ in range(5):
+for _ in range(6, 2, -1):
     robotArm.grab()
     for _ in range(COUNT_1):robotArm.moveRight()
     robotArm.drop()
