@@ -12,12 +12,10 @@ for color in range(4):
         for i in range(5):
             robotArm.moveLeft()
 
-            if _ < 4:
-
-                for i in range(5):
-                    robotArm.moveRight()
-                for i in range(4):
-                    robotArm.moveLeft()
+        for i in range(5):
+            robotArm.moveRight()
+        for i in range(4):
+            robotArm.moveLeft()
 
 # Na jouw code wachten tot het sluiten van het venster:
 robotArm.wait()
