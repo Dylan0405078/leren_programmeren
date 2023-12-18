@@ -3,7 +3,9 @@ PRIJS_BIER = 2.40
 PRIJS_CHAMPAGNE = 12.30
 
 DRANKJES = ('cola', 'bier', 'champagne')
-VIP_LIST = ('jeroen', 'jouke', 'rudi')
+VIP_LIST =['jeroen', 'jouke', 'rudi'] 
+
+
 
 def calculate_age_difference(age):
     return 18 - age
