@@ -1,4 +1,4 @@
-from fruitmand import *
+from fruitmand_1 import fruitmand
 
-
-print(f'{fruitmand}')
+for fruit in fruitmand:
+    print(fruit['name'])

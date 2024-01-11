@@ -6,7 +6,7 @@ def raden_spel():
     ronden = 0
 
     while ronden < 20:
-        raadbeurten = 0  # aparte teller voor raadbeurten in elke ronde
+        raadbeurten = 0  
         while raadbeurten < 10:
             gok = input("Raad een getal tussen 1 en 1000 (of 'stop' om te eindigen): ")
 
