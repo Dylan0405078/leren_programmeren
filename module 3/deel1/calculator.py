@@ -1,72 +1,54 @@
-# rekenmachine.py
 import functions
+import time
 
-def main():
-    firstRound = True
-    n1 = False
+firstRound = True
+n1 = 0  
 
-    while True:
-        if firstRound:
-            print("Wat wilt u doen?")
-        else:
-            print("Wil je wat met de uitkomst doen?")
-            
-        if firstRound:
-            choice = input("A) getallen optellen, B) getallen aftrekken, C) getallen vermenigvuldigen, D) getallen delen, E) getal ophogen, F) getal verlagen, G) getal verdubbelen of H) getal halveren? ")
-        else:
-            choice = input("A) iets optellen, B) iets aftrekken, C) met iets vermenigvuldigen, D) ergens door delen, E) ophogen, F) verlagen, G) verdubbelen, H) halveren of I) niets? ")
+while True:
+    if firstRound:
+        print("Wat wilt u doen?")
+    else:
+        print(f"Wil je wat met de uitkomst ({n1}) doen?")
+    
+    options = "A) getallen optellen, B) getallen aftrekken, C) getallen vermenigvuldigen, D) getallen delen, E) getal ophogen, F) getal verlagen, G) getal verdubbelen of H) getal halveren? " if firstRound else "A) iets optellen, B) iets aftrekken, C) met iets vermenigvuldigen, D) ergens door delen, E) ophogen, F) verlagen, G) verdubbelen, H) halveren of I) niets? "
+    choice = input(options).upper()
 
-        if choice == 'I':
-            print("Programma gestopt.")
-            break
+    if choice == 'I':
+        print(f'het eindresultaat is: {n1}')
+        print("Programma sluit zich af.....")
+        time.sleep(3)
+        functions.clear_console()
+        break
 
-        if firstRound:
-            if choice in ['A', 'B', 'C', 'D']:
+    if firstRound:
+        while True:
+            try:
                 n1 = float(input("Voer het eerste getal in: "))
                 n2 = float(input("Voer het tweede getal in: "))
-            elif choice in ['E', 'F']:
-                n1 = float(input("Voer het getal in: "))
-                n2 = 1
-            elif choice in ['G', 'H']:
-                n1 = float(input("Voer het getal in: "))
-                n2 = 2
-            else:
-                print("Ongeldige keuze.")
-                continue
+                break
+            except ValueError:
+                print("Ongeldige invoer. Voer alstublieft een geldig getal in.")
+        
+    else:
+        if choice in ['A', 'B', 'C', 'D']:
+            while True:
+                try:
+                    n2 = float(input("Voer het tweede getal in: "))
+                    break
+                except ValueError:
+                    print("Ongeldige invoer. Voer alstublieft een geldig getal in.")
+        elif choice in ['E', 'F', 'G', 'H']:
+            n2 = 1 if choice in ['E', 'F'] else 2
         else:
-            if choice in ['A', 'B', 'C', 'D']:
-                n2 = float(input("Voer het tweede getal in: "))
-            else:
-                print("Ongeldige keuze.")
-                continue
+            print("Ongeldige keuze.")
+            continue
 
-        if choice == 'A':
-            result = functions.addition(n1, n2)
-            print(f"{n1} + {n2} = {result}")
-        elif choice == 'B':
-            result = functions.subtraction(n1, n2)
-            print(f"{n1} - {n2} = {result}")
-        elif choice == 'C':
-            result = functions.multiplication(n1, n2)
-            print(f"{n1} * {n2} = {result}")
-        elif choice == 'D':
-            result = functions.division(n1, n2)
-            print(f"{n1} : {n2} = {result}")
-        elif choice == 'E':
-            result = functions.addition(n1, n2)
-            print(f"{n1} + 1 = {result}")
-        elif choice == 'F':
-            result = functions.subtraction(n1, n2)
-            print(f"{n1} - 1 = {result}")
-        elif choice == 'G':
-            result = functions.multiplication(n1, n2)
-            print(f"{n1} * 2 = {result}")
-        elif choice == 'H':
-            result = functions.division(n1, n2)
-            print(f"{n1} : 2 = {result}")
+    if choice == 'D' and n2 == 0:
+        print("Kan niet delen door 0!")
+        continue
 
-        firstRound = False
-        n1 = result
+    result = getattr(functions, {'A': 'addition', 'B': 'subtraction', 'C': 'multiplication', 'D': 'division', 'E': 'addition', 'F': 'subtraction', 'G': 'multiplication', 'H': 'division'}[choice])(n1, n2)
 
-if __name__ == "__main__":
-    main()
+    print(f"Uitkomst: {result}")
+    firstRound = False
+    n1 = result
