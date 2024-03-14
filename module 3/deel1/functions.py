@@ -1,4 +1,6 @@
 import os
+
+
 def addition(number1, number2):
     return number1 + number2
 
@@ -25,6 +27,18 @@ def double(number1):
 
 def halve(number1):
     return number1 / 2
+
+
+def ask_for_number(prompt):
+    while True:
+        try:
+            n1 = float(input(prompt))
+            return n1
+        except ValueError:
+            print("Ongeldige invoer. Voer alstublieft een geldig getal in.")
+
+
+
 
 def clear_console():
     os.system('cls' if os.name == 'nt' else 'clear')

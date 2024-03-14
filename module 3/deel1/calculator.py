@@ -21,22 +21,13 @@ while True:
         break
 
     if firstRound:
-        while True:
-            try:
-                n1 = float(input("Voer het eerste getal in: "))
-                n2 = float(input("Voer het tweede getal in: "))
-                break
-            except ValueError:
-                print("Ongeldige invoer. Voer alstublieft een geldig getal in.")
+        n1 = functions.ask_for_number('voer het eerste getal in:')
+        n2 = functions.ask_for_number('voer het tweede getal in:')
+
         
     else:
         if choice in ['A', 'B', 'C', 'D']:
-            while True:
-                try:
-                    n2 = float(input("Voer het tweede getal in: "))
-                    break
-                except ValueError:
-                    print("Ongeldige invoer. Voer alstublieft een geldig getal in.")
+            n2 = functions.ask_for_number('voer het tweede getal in:')
         elif choice in ['E', 'F', 'G', 'H']:
             n2 = 1 if choice in ['E', 'F'] else 2
         else:
