@@ -263,7 +263,7 @@ if adventureStarted:
                     else:
                         print_colorvars('Dat krijgt ieder van de {} avonturiers {} goud.', [adventurerGoldCut, len(party)])
 
-                    earnings = getEarnigs(profitGold, mainCharacter, friends, investors)
+                    earnings = getEarnings(profitGold, mainCharacter, friends, investors)
 
                     if earnings == None:
                         print_colorvars('Het enige wat nog te doen is, is de balans op maken.')
