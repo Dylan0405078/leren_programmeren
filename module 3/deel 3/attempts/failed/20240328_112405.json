@@ -1,0 +1,32 @@
+{
+    "roomorder": "r,o,o,m,1,,,r,o,o,m,2,,,r,o,o,m,3,,,r,o,o,m,4,,,r,o,o,m,5,,,r,o,o,m,6,,,r,o,o,m,7,,,r,o,o,m,8,,,r,o,o,m,9,,,r,o,o,m,1,0",
+    "start": "28-03-2024 11:24:04",
+    "end": "28-03-2024 11:24:05",
+    "data": {
+        "player": {
+            "noice": 0,
+            "pickups": []
+        },
+        "route": {
+            "routetaken": [
+                "step A : r"
+            ],
+            "doorcode": "",
+            "errors": [
+                "stap A : function roomr not found"
+            ],
+            "roomanswers": [
+                "roomr : None"
+            ]
+        },
+        "story": {
+            "fullstory": [
+                "...",
+                "Je bent ergens waar je niet verwacht te zijn.",
+                "Je bent verdwaald geraakt in de dungeon."
+            ],
+            "choices": [],
+            "errors": []
+        }
+    }
+}

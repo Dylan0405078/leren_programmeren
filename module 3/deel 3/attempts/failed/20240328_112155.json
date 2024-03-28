@@ -1,0 +1,32 @@
+{
+    "roomorder": "1,2,3,4,5,6,7,8,9,10",
+    "start": "28-03-2024 11:21:53",
+    "end": "28-03-2024 11:21:54",
+    "data": {
+        "player": {
+            "noice": 0,
+            "pickups": []
+        },
+        "route": {
+            "routetaken": [
+                "step A : 1,2,3,4,5,6,7,8,9,10"
+            ],
+            "doorcode": "",
+            "errors": [
+                "stap A : function room1,2,3,4,5,6,7,8,9,10 not found"
+            ],
+            "roomanswers": [
+                "room1,2,3,4,5,6,7,8,9,10 : None"
+            ]
+        },
+        "story": {
+            "fullstory": [
+                "...",
+                "Je bent ergens waar je niet verwacht te zijn.",
+                "Je bent verdwaald geraakt in de dungeon."
+            ],
+            "choices": [],
+            "errors": []
+        }
+    }
+}
