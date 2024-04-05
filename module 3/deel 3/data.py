@@ -80,6 +80,9 @@ class route:
             'errors' : self.errors,
             'roomanswers' : [f'room{self.roomsvisted[i]} : {self.roomanswers[i]}' for i in range(len(self.roomanswers))]
         }
+    def reset_route(self):
+        self.current_room = None
+        self.roomanswers = []
     
 class story:
     fullstory:list = []

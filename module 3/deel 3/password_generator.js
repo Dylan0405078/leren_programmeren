@@ -4,35 +4,35 @@ function generatePassword() {
         return array[Math.floor(Math.random() * array.length)];
     }
 
-    // Functie om een willekeurig hoofdletter te genereren (exclusief middelste posities)
+    
     function getRandomUppercase() {
         const uppercaseLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         let uppercase = getRandomElement(uppercaseLetters.split(''));
-        // Controleer of het willekeurig gekozen hoofdletter niet op de twee middelste posities staat
+        // Controleren of hoofdletter op 2 middelste posities staan.
         while (uppercase === password[11] || uppercase === password[12]) {
             uppercase = getRandomElement(uppercaseLetters.split(''));
         }
         return uppercase;
     }
 
-    // Functie om een willekeurig kleine letter te genereren
+
     function getRandomLowercase() {
         const lowercaseLetters = "abcdefghijklmnopqrstuvwxyz";
         return getRandomElement(lowercaseLetters.split(''));
     }
 
-    // Functie om een willekeurig speciaal teken te genereren (exclusief eerste en laatste posities)
+    
     function getRandomSpecialChar() {
         const specialChars = "@#$%&_?";
         let specialChar = getRandomElement(specialChars.split(''));
-        // Controleer of het willekeurig gekozen speciaal teken niet op de eerste of laatste positie staat
-        while (specialChar === password[0] || specialChar === password[23]) {
+        // Controleren of teken niet op eerste of laatste plek staat.
+       while (specialChar === password[0] || specialChar === password[23]) {
             specialChar = getRandomElement(specialChars.split(''));
         }
         return specialChar;
     }
 
-    // Functie om een willekeurig cijfer te genereren (exclusief eerste 3 posities)
+    
     function getRandomDigit() {
         return Math.floor(Math.random() * 10);
     }
@@ -69,5 +69,5 @@ function generatePassword() {
     return password;
 }
 
-console.log("dit is je wachtwoord:")
-console.log(          generatePassword());
+
+console.log("Dit is je wachtwoord: " + generatePassword());

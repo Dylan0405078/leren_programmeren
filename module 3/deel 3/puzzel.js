@@ -1,34 +1,37 @@
 
+// vraag 1)
+        //312211
 
-//312211
 
 
-
-function lookAndSaySequence() {
-    let sequence = ["1"]; // start met de eerste regel
+function puzzle() {
+    let sequence = ["1"]; 
     let currentLine = "1";
 
     while (true) {
-        let nextLine = ""; // de volgende regel opbouwen
+        let nextLine = ""; 
         let count = 1;
+
+
+        // i is positie teller om te cijfers te tellen en waarde word verhoogd tot aan dat hij het einde bereikt.
         for (let i = 0; i < currentLine.length; i++) {
             if (currentLine[i] === currentLine[i + 1]) {
-                count++; // het aantal keer dat het huidige cijfer voorkomt
+                count++; // zorgt dat de line met 1 verlengt word
             } else {
-                nextLine += count + currentLine[i]; // het aantal keer dat het cijfer voorkomt, gevolgd door het cijfer zelf
+                nextLine += count + currentLine[i]; 
                 count = 1; // reset de teller voor het volgende cijfer
             }
         }
-        sequence.push(nextLine); // voeg de volgende regel toe aan de reeks
-        currentLine = nextLine; // zet de volgende regel in als de huidige regel
+        sequence.push(nextLine); // pusht oude regel door voor een nieuwe regel en start opnieuw.
+        currentLine = nextLine; // nieuwe regel gebruikt als huidige regel
 
-        // controleer of er twee opeenvolgende "3"s in de huidige regel zijn
+        // controleren of er 2 "3" acher elkaar staan zo ja? break de loop
         if (currentLine.indexOf("33") !== -1) {
-            break; // als er twee opeenvolgende "3"s zijn, stop dan de loop
+            break; 
         }
     }
 
     return sequence;
 }
 
-console.log(lookAndSaySequence());
+console.log(puzzle());

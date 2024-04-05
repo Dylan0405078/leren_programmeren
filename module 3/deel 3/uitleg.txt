@@ -1,0 +1,30 @@
+
+juiste roomorder = 1, 7, 5, 9, 6, 10         ??????
+
+roomorder met geheim einde = 1, 7, 5, 8, 3      ?????????
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Stappenplan voor het geheime einde van de verborgen doorgang:
+1.	Room 5 (Pilaarhal):
+•	Kies voor het gat in plaats van de gang.
+•	Ga door het gat om de verborgen doorgang te betreden.
+2.	Geheime Kamer:
+•	Verken de geheime kamer en verzamel de schat die daar verborgen is.
+3.	Voltooiing:
+•	Nadat je de schat hebt verzameld, zal het spel aangeven dat je een geheim einde hebt bereikt.
+•
+
+Stappenplan voor het cheat-einde:
+1.	Room 10 (Laatste kamer):
+•	Wanneer je bij de deur bent met het toetsenbord, voer je de specifieke cheatcode (362880) in.   ???????
+2.	Deur ontgrendeld:
+•	Door de cheatcode in te voeren, wordt de deur ontgrendeld zonder de noodzaak om de juiste code te achterhalen.
+3.	Voltooiing:
+•	Nadat je de deur hebt geopend met de cheatcode, zal het spel aangeven dat je de dungeon hebt voltooid, zij het op een onconventionele manier.
+•	Reflecteer op het gebruik van de cheatcode en ontdek welke andere uitdagingen je in de dungeon had kunnen aangaan.
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

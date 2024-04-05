@@ -416,6 +416,9 @@ class rooms:
 
                 if answer != False:
                     self.story.write('Met een harde toon zwaait de deur open en je rent naar buiten.')
-        
+         
         return answer
+
+
+
 
