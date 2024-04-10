@@ -39,29 +39,29 @@ function generatePassword() {
 
     let password = "";
 
-    // Genereer 2 tot 6 hoofdletters
+    // Genereer 2 tot 6 hoofdletters.
     const numUppercase = Math.floor(Math.random() * 5) + 2;
     for (let i = 0; i < numUppercase; i++) {
         password += getRandomUppercase();
     }
 
-    // Genereer minimaal 8 kleine letters
+    // Genereer  8 kleine letters.
     for (let i = 0; i < 8; i++) {
         password += getRandomLowercase();
     }
 
-    // Genereer 3 speciale tekens
+    // Genereer 3 speciale tekens.
     for (let i = 0; i < 3; i++) {
         password += getRandomSpecialChar();
     }
 
-    // Genereer 4 tot 7 cijfers
+    // Genereer 4 tot 7 cijfers.
     const numDigits = Math.floor(Math.random() * 4) + 4;
     for (let i = 0; i < numDigits; i++) {
         password += getRandomDigit();
     }
 
-    // Controleer of het wachtwoord eindigt met een hoofdletter
+    // Controleren op hoofdletter laatste plek.
     if (password.endsWith(getRandomUppercase())) {
         password = password.slice(0, -1) + getRandomLowercase();
     }
@@ -69,5 +69,7 @@ function generatePassword() {
     return password;
 }
 
+for (let i = 1; i < 10; i++ ){
+    console.log("Dit is je wachtwoord: " + generatePassword());
+}
 
-console.log("Dit is je wachtwoord: " + generatePassword());
