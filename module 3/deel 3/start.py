@@ -10,17 +10,18 @@ print('=========================Frittata recept=========================')
 print("Hoeveel personen moeten er eten?")
 nr_persons = input_nr_persons("Voer het aantal personen in: ")
 
-# Ingrediënten voor het recept voor 4 personen
+# Ingrediënten voor het recept (4 personen)
 eggs_quantity = adjust_quantity(7, nr_persons)
 milk_quantity = adjust_quantity(0.5, nr_persons)
 salt_quantity = adjust_quantity(0.5, nr_persons)
-pepper_quantity = adjust_quantity(0.25, nr_persons)
+pepper_quantity = round(adjust_quantity(0.25, nr_persons), 1)
 oil_quantity = adjust_quantity(1, nr_persons)
 onions_quantity = adjust_quantity(1, nr_persons)
 garlics_quantity = adjust_quantity(2, nr_persons)
 paprikas_quantity = adjust_quantity(3, nr_persons)
 spinach_quantity = adjust_quantity(1, nr_persons)
 cheese_quantity = adjust_quantity(0.5, nr_persons)
+
 
 # Uitvoer van aangepaste ingrediëntenlijst
 print('=========================Frittata recept=========================')
@@ -37,5 +38,3 @@ print(f"{str_amount_fraction(paprikas_quantity)} {str_units(paprikas_quantity, U
 print(f"{str_amount_fraction(spinach_quantity)} {str_units(spinach_quantity, UNIT_CUPS)} {str_single_plural(spinach_quantity, TXT_SPINACH)} ({ml2gram(unit2ml(spinach_quantity, UNIT_CUPS), GRAM_PER_ML_SPINACH)} gram)")
 print(f"{str_amount_fraction(cheese_quantity)} {str_units(cheese_quantity, UNIT_CUPS)} {str_single_plural(cheese_quantity, TXT_CHEESE)} ({ml2gram(unit2ml(cheese_quantity, UNIT_CUPS), GRAM_PER_ML_CHEESE)} gram)")
 print('=================================================================')
-time.sleep(10)
-os.system('cls')

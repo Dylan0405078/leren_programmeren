@@ -1,6 +1,7 @@
 from constant import *
 import math
 
+
 def input_nr_persons(prompt: str) -> int:
     while True:
         try:
@@ -33,16 +34,15 @@ def str_single_plural(amount: float, txt: str) -> str:
 # Returns amount in string with ¼ , ½  and ¾
 TXT_FRACTIONS = ('', '¼', '½', '¾')
 
-
 def str_amount_fraction(amount: float) -> str:
     ints = int(amount)
     fraction = round(amount - ints, 2)
     quarter = round(fraction / 0.25)
     str_ints = str(ints) if ints > 0 else ''
-    if fraction == 0:
+    if fraction == 0 or quarter == 0:
         return str_ints
     else:
-        return f"{str_ints} {TXT_FRACTIONS[quarter]}"
+        return f"{str_ints} {TXT_FRACTIONS[quarter - 1]}"  
 
 
 # Omrekenen van aantal personen
