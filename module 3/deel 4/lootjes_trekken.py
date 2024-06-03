@@ -30,6 +30,9 @@ while True:
     
     if naam_vragen.lower() == 'stop':
         print('Het programma wordt afgesloten.....')
+        time.sleep(3)
+        os.system('cls' if os.name == 'nt' else 'clear')  # Console leegmaken
+
         break
 
     if naam_vragen in deelnemers:
@@ -45,3 +48,6 @@ while True:
 
     time.sleep(3)
     os.system('cls' if os.name == 'nt' else 'clear')  # Console leegmaken
+
+
+
