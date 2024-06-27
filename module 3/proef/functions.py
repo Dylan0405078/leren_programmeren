@@ -130,14 +130,12 @@ def validate_flavors(num_scoops):
     flavors = []
     for i in range(1, num_scoops + 1):
         while True:
-            flavor = input(f"Welke smaak wilt u voor bolletje nummer {i}? A) Aardbei, C) Chocolade, M) Munt of V) Vanille? ").strip().upper()
+            flavor = input(f"Welke smaak wilt u voor bolletje nummer {i}? A) Aardbei, C) Chocolade of V) Vanille? ").strip().upper()
             if flavor in ['A', 'C', 'M', 'V']:
                 if flavor == 'A':
                     flavors.append('aardbei')
                 elif flavor == 'C':
                     flavors.append('chocolade')
-                elif flavor == 'M':
-                    flavors.append('munt')
                 elif flavor == 'V':
                     flavors.append('vanille')
                 break
