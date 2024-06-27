@@ -142,7 +142,7 @@ def validate_flavors(num_scoops):
                     flavors.append('vanille')
                 break
             else:
-                print("Sorry dat snap ik niet...")
+                print("Sorry dat is geen optie die we aanbieden....")
     return flavors
 
 def validate_liter_flavors(num_liters):
@@ -161,7 +161,7 @@ def validate_liter_flavors(num_liters):
                     flavors['vanille'] = flavors.get('vanille', 0) + 1
                 break
             else:
-                print("Sorry dat snap ik niet...")
+                print("Sorry dat is geen optie die we aanbieden....")
     return flavors
 
 def ask_customer_type():
