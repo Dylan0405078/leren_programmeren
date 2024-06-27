@@ -4,7 +4,7 @@ scoops_message = "Hoeveel bolletjes wil je bestellen? "
 cone_cup_message = "Wil je een hoorntje of een bakje? "
 topping_message = "Wat voor topping wilt u: A) Geen, B) Slagroom, C) Sprinkels of D) Caramel Saus? "
 
-SCOOP_PRICE = 1.10
+SCOOP_PRICE = 0.95
 CONE_PRICE = 1.25
 CUP_PRICE = 0.75
 SLAGROOM_PRICE = 0.50
