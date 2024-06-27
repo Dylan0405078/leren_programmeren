@@ -147,7 +147,7 @@ def validate_liter_flavors(num_liters):
     flavors = {}
     for i in range(1, num_liters + 1):
         while True:
-            flavor = input(f"Welke smaak wilt u voor liter nummer {i}? A) Aardbei, C) Chocolade, M) Munt of V) Vanille? ").strip().upper()
+            flavor = input(f"Welke smaak wilt u voor liter nummer {i}? A) Aardbei, C) Chocolade of V) Vanille? ").strip().upper()
             if flavor in ['A', 'C', 'M', 'V']:
                 if flavor == 'A':
                     flavors['aardbei'] = flavors.get('aardbei', 0) + 1
